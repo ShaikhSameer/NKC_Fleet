@@ -1,8 +1,9 @@
+import type { SVGProps } from "react";
 import Image from "next/image";
 import { Phone, Mail } from "lucide-react";
 import { NAV_LINKS, CONTACT, ASSETS } from "@/lib/content";
 
-function FacebookIcon(props) {
+function FacebookIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
       <path d="M13.5 21v-8.2h2.75l.41-3.2h-3.16V7.56c0-.93.26-1.56 1.59-1.56h1.7V3.14C15.98 3.1 15.03 3 13.92 3c-2.33 0-3.92 1.42-3.92 4.03v2.57H7.25v3.2h2.75V21h3.5Z" />
@@ -10,7 +11,7 @@ function FacebookIcon(props) {
   );
 }
 
-function InstagramIcon(props) {
+function InstagramIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" {...props}>
       <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" />
@@ -20,7 +21,7 @@ function InstagramIcon(props) {
   );
 }
 
-function LinkedinIcon(props) {
+function LinkedinIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
       <path d="M6.94 8.5H3.56V20.5H6.94V8.5Z" />

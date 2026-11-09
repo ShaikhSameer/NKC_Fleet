@@ -17,10 +17,11 @@ import {
   Shirt,
   GraduationCap,
   Headset,
+  type LucideIcon,
 } from "lucide-react";
-import { SIGNIFICANT_COMPONENTS, VALUE_ADDITIONS } from "@/lib/content";
+import { SIGNIFICANT_COMPONENTS, VALUE_ADDITIONS, type IconText } from "@/lib/content";
 
-const ICONS = {
+const ICONS: Record<string, LucideIcon> = {
   ShieldCheck,
   Smartphone,
   FileBarChart,
@@ -38,7 +39,15 @@ const ICONS = {
   Headset,
 };
 
-function FeatureList({ title, items, accent }) {
+function FeatureList({
+  title,
+  items,
+  accent,
+}: {
+  title: string;
+  items: IconText[];
+  accent: string;
+}) {
   return (
     <div>
       <h3 className="font-display text-lg font-bold text-brand-dark mb-6">{title}</h3>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Smartphone,
@@ -40,7 +40,7 @@ const TABS = [
   },
 ];
 
-function PhoneFrame({ children }) {
+function PhoneFrame({ children }: { children: ReactNode }) {
   return (
     <div className="relative mx-auto w-[260px] rounded-[2.2rem] border-[6px] border-brand-dark bg-brand-dark shadow-2xl">
       <div className="absolute left-1/2 top-0 h-5 w-24 -translate-x-1/2 rounded-b-xl bg-brand-dark z-10" />
@@ -51,7 +51,7 @@ function PhoneFrame({ children }) {
   );
 }
 
-function BrowserFrame({ children }) {
+function BrowserFrame({ children }: { children: ReactNode }) {
   return (
     <div className="w-full max-w-xl mx-auto rounded-2xl border border-neutral-200 bg-white shadow-2xl overflow-hidden">
       <div className="flex items-center gap-1.5 border-b border-neutral-100 bg-neutral-50 px-4 py-2.5">

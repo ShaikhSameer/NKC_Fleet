@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 
@@ -14,7 +16,7 @@ const manrope = Manrope({
   display: "swap",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "NKC Fleet Management Services | Corporate & Hospital Fleet Transport",
   description:
     "NKC Fleet Management Services (Pvt) Ltd — 19+ years delivering safe, tracked, and reliable fleet & staff transportation across Karachi, trusted by leading hospitals and institutions.",
@@ -33,7 +35,9 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: ReactNode }>) {
   return (
     <html
       lang="en"

@@ -1,3 +1,42 @@
+export interface NavLink {
+  href: string;
+  label: string;
+}
+
+export interface Stat {
+  value: number;
+  suffix: string;
+  label: string;
+}
+
+export interface FleetType {
+  name: string;
+  desc: string;
+}
+
+export interface StandoutFeature {
+  icon: string;
+  title: string;
+  desc: string;
+}
+
+export interface IconText {
+  icon: string;
+  text: string;
+}
+
+export interface Office {
+  label: string;
+  address: string;
+}
+
+export interface Contact {
+  phones: string[];
+  email: string;
+  web: string;
+  offices: Office[];
+}
+
 const CLOUDINARY_BASE = "https://res.cloudinary.com/w6gu8mvn/image/upload/nkc-fleet";
 
 export const ASSETS = {
@@ -8,7 +47,7 @@ export const ASSETS = {
   logoToyota: `${CLOUDINARY_BASE}/logo-toyota.svg`,
 };
 
-export const NAV_LINKS = [
+export const NAV_LINKS: NavLink[] = [
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
   { href: "#technology", label: "Technology" },
@@ -18,14 +57,14 @@ export const NAV_LINKS = [
   { href: "#contact", label: "Contact" },
 ];
 
-export const STATS = [
+export const STATS: Stat[] = [
   { value: 100, suffix: "+", label: "Owned Vehicles" },
   { value: 1137, suffix: "", label: "Staff Transported\nDaily" },
   { value: 19, suffix: " yrs", label: "Hospital Fleet\nExperience" },
   { value: 24, suffix: "/7", label: "Service Availability" },
 ];
 
-export const FLEET_TYPES = [
+export const FLEET_TYPES: FleetType[] = [
   {
     name: "Bolan Hi-Roof",
     desc: "Compact vans ideal for short, frequent staff rotations.",
@@ -44,7 +83,7 @@ export const FLEET_TYPES = [
   },
 ];
 
-export const STANDOUT_FEATURES = [
+export const STANDOUT_FEATURES: StandoutFeature[] = [
   {
     icon: "HeartPulse",
     title: "Hospital Fleet Specialists",
@@ -62,7 +101,7 @@ export const STANDOUT_FEATURES = [
   },
 ];
 
-export const SIGNIFICANT_COMPONENTS = [
+export const SIGNIFICANT_COMPONENTS: IconText[] = [
   { icon: "ShieldCheck", text: "Trusted fleet & transportation service" },
   { icon: "Smartphone", text: "Dedicated application for staff" },
   { icon: "FileBarChart", text: "Customized reports for every client" },
@@ -74,7 +113,7 @@ export const SIGNIFICANT_COMPONENTS = [
   { icon: "Users", text: "Reliable, safe service with supporting drivers" },
 ];
 
-export const VALUE_ADDITIONS = [
+export const VALUE_ADDITIONS: IconText[] = [
   { icon: "Smartphone", text: "User-friendly mobile application" },
   { icon: "Timer", text: "Customized tracker reports: in/out timing & late arrivals" },
   { icon: "Satellite", text: "Real-time monitoring with instant alerts for unusual activity" },
@@ -84,7 +123,7 @@ export const VALUE_ADDITIONS = [
   { icon: "Headset", text: "Supervisor on-call in every shift for smooth operations" },
 ];
 
-export const CLIENTS = [
+export const CLIENTS: string[] = [
   "Tabba Heart Institute",
   "The Aga Khan University Hospital",
   "Dow University of Health Sciences",
@@ -100,7 +139,7 @@ export const CLIENTS = [
   "ACT Polyols",
 ];
 
-export const CONTACT = {
+export const CONTACT: Contact = {
   phones: ["+9221 35843438", "+92 321 9288885"],
   email: "info@nkcfleet.com",
   web: "www.nkc.org.pk",

@@ -3,10 +3,10 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, ShieldCheck, Radar, Phone } from "lucide-react";
-import { STATS, ASSETS } from "@/lib/content";
+import { STATS, ASSETS, type Stat } from "@/lib/content";
 import { useCountUp } from "@/lib/useCountUp";
 
-function StatPill({ stat, index }) {
+function StatPill({ stat, index }: { stat: Stat; index: number }) {
   const { ref, value } = useCountUp(stat.value, 1400 + index * 150);
   return (
     <motion.div

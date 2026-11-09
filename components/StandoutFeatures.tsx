@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { HeartPulse, Clock, Radar } from "lucide-react";
+import { HeartPulse, Clock, Radar, type LucideIcon } from "lucide-react";
 import { STANDOUT_FEATURES } from "@/lib/content";
 
-const ICONS = { HeartPulse, Clock, Radar };
+const ICONS: Record<string, LucideIcon> = { HeartPulse, Clock, Radar };
 
 export default function StandoutFeatures() {
   return (
