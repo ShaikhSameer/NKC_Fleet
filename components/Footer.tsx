@@ -121,7 +121,7 @@ export default function Footer() {
             © {new Date().getFullYear()} NKC Fleet Management Services (Pvt) Ltd. All rights reserved.
           </p>
           <p className="text-xs text-white/30">
-            Designed for safe, reliable fleet operations by{" "}
+            Website by{" "}
             <a
               href="https://megavectors.com/"
               target="_blank"
