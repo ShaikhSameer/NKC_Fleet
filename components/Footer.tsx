@@ -120,14 +120,17 @@ export default function Footer() {
           <p className="text-xs text-white/40">
             © {new Date().getFullYear()} NKC Fleet Management Services (Pvt) Ltd. All rights reserved.
           </p>
-          <a
-            href="https://megavectors.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-white/30 hover:text-white/60 transition-colors"
-          >
-            Designed &amp; developed by MegaVectors
-          </a>
+          <p className="text-xs text-white/30">
+            Designed for safe, reliable fleet operations by{" "}
+            <a
+              href="https://megavectors.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/50 hover:text-white transition-colors"
+            >
+              MegaVectors
+            </a>
+          </p>
         </div>
       </div>
     </footer>
